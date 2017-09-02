@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="league-of-neechans-server-0.0.1-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resources"/>
+        <dependent-module archiveName="trinary-ro-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/trinary-ro/trinary-ro">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pyst-engine-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/league-of-neechans-engine/league-of-neechans-engine">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="trinary-security-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/trinary-security/trinary-security">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="league-of-neechans-server"/>
+        <property name="java-output-path" value="/league-of-neechans-server/bin"/>
+    </wb-module>
+</project-modules>
