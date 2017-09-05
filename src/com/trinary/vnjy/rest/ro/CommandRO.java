@@ -1,11 +1,12 @@
 package com.trinary.vnjy.rest.ro;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CommandRO {
     protected String from = "";
     private String command = "";
-    private ArrayList<String> args = new ArrayList<>();
+    private List<String> args = new ArrayList<>();
     
     public String getFrom() {
         return from;
@@ -23,11 +24,11 @@ public class CommandRO {
         this.command = command;
     }
 
-    public ArrayList<String> getArgs() {
+    public List<String> getArgs() {
         return args;
     }
 
-    public void setArgs(ArrayList<String> args) {
+    public void setArgs(List<String> args) {
         this.args = args;
     }
 }
