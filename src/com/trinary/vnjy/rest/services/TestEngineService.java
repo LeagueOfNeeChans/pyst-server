@@ -11,11 +11,11 @@ import javax.enterprise.inject.Alternative;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.trinary.vnjy.engines.GenericScriptEngine;
+import com.trinary.vnjy.engines.JSEngine;
+import com.trinary.vnjy.objects.Command;
+import com.trinary.vnjy.objects.GameState;
 import com.trinary.vnjy.rest.entities.Scene;
-import com.trinary.vnjy.se.Command;
-import com.trinary.vnjy.se.GameState;
-import com.trinary.vnjy.se.GenericScriptEngine;
-import com.trinary.vnjy.se.JSEngine;
 
 @Alternative
 public class TestEngineService implements EngineService {

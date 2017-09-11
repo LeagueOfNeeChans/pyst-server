@@ -3,7 +3,7 @@ package com.trinary.vnjy.rest.entities;
 import java.util.List;
 import java.util.Set;
 
-import com.trinary.vnjy.se.Command;
+import com.trinary.vnjy.objects.Command;
 
 public class Scene {
 	private String instanceId;

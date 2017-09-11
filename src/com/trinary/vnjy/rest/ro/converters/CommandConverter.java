@@ -3,8 +3,8 @@ package com.trinary.vnjy.rest.ro.converters;
 import javax.ws.rs.core.UriInfo;
 
 import com.trinary.ro.v2.converter.ROConverter;
+import com.trinary.vnjy.objects.Command;
 import com.trinary.vnjy.rest.ro.CommandRO;
-import com.trinary.vnjy.se.Command;
 
 public class CommandConverter extends ROConverter<CommandRO, Command> {
 
@@ -23,7 +23,6 @@ public class CommandConverter extends ROConverter<CommandRO, Command> {
 		CommandRO ro = new CommandRO();
 		ro.setCommand(entity.getCommand());
 		ro.setArgs(entity.getArgs());
-		ro.setFrom(entity.getFrom());
 		
 		return ro;
 	}
