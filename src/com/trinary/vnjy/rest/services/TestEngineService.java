@@ -14,7 +14,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.trinary.vnjy.rest.entities.Scene;
 import com.trinary.vnjy.se.Command;
 import com.trinary.vnjy.se.GameState;
-import com.trinary.vnjy.se.ScriptEngine;
+import com.trinary.vnjy.se.GenericScriptEngine;
+import com.trinary.vnjy.se.JSEngine;
 
 @Alternative
 public class TestEngineService implements EngineService {
@@ -63,7 +64,7 @@ public class TestEngineService implements EngineService {
 			throw new Exception("No engine instance found for that id");
 		}
 		
-		ScriptEngine engine = ScriptEngine.create(state);
+		GenericScriptEngine engine = JSEngine.create(state);
 		
 		if (!engine.currentScene()) {
 			return null;
@@ -89,7 +90,7 @@ public class TestEngineService implements EngineService {
 			throw new Exception("No engine instance found for that id");
 		}
 		
-		ScriptEngine engine = ScriptEngine.create(state);
+		GenericScriptEngine engine = JSEngine.create(state);
 		
 		if (!state.isInitialized()) {
 			if (!engine.currentScene()) {
@@ -122,7 +123,7 @@ public class TestEngineService implements EngineService {
 			throw new Exception("No engine instance found for that id");
 		}
 		
-		ScriptEngine engine = ScriptEngine.create(state);
+		GenericScriptEngine engine = JSEngine.create(state);
 		
 		engine.choose(choice);
 		if (!engine.nextScene()) {
